@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/card_view_ico"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/comm_margin"
+                android:layout_marginTop="@dimen/comm_padding"
+                android:layout_marginBottom="@dimen/comm_padding"
+                android:scaleType="fitXY"
+                android:background="@color/colorPrimaryLight"/>
+
+            <TextView
+                android:id="@+id/card_view_bill_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/card_view_ico"
+                android:layout_marginStart="@dimen/comm_margin"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/comm_textSize_middle"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/comm_margin"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:src="@drawable/ic_keyboard_arrow_right"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/stroke_width"
+                android:layout_marginStart="@dimen/comm_margin"
+                android:layout_marginEnd="@dimen/comm_margin"
+                android:background="@color/colorWhiteSmoke"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">报账管家</string>
+    <string name="app_versionCode">1</string>
+    <string name="app_versionName">1.0.0</string>
+    <string name="app_copyRight">© LeoSoft Corporation.All rights reserved.</string>
+    <string name="login_title">请输入解锁密码</string>
+    <string name="settings_password">修改密码</string>
+    <string name="settings_type">类别管理</string>
+    <string name="settings_file">归档账单</string>
+    <string name="exchange_file">数据备份</string>
+    <string name="settings_about">关于</string>
+    <string name="text_ok">确定</string>
+    <string name="text_reset">重置</string>
+
+    <string name="bill_add_title">新增待报销账单</string>
+    <string name="bill_type_select">报账类型</string>
+    <string name="save">保存</string>
+    <string name="hint_bill_sum">请输入报账金额</string>
+    <string name="bill_date_title">费用日期</string>
+    <string name="hint_bill_date">请输入费用日期</string>
+
+    <string name="user_photo_title">选择用户头像</string>
+    <string name="user_photo_camera">拍摄头像</string>
+    <string name="user_photo_gallery">相册选择</string>
+    <string name="user_photo_default">恢复默认</string>
+
+    <string name="modify_pass_title">修改密码</string>
+    <string name="modify_pass_old">请输入原密码</string>
+
+
+    <!--底部工具栏-->
+    <string name="tab_1">待报销</string>
+    <string name="tab_2">已报销</string>
+    <string name="tab_3">我</string>
+
+    <!--待报账卡片-->
+    <string name="card_view_bill_sum_title">报账金额</string>
+    <string name="card_view_bill_date_title">费用日期</string>
+    <string name="card_view_bill_create_date_title">记账日期</string>
+    <string name="card_view_bill_deal_date_title">报账日期</string>
+    <string name="card_view_bill_memo_title">备注</string>
+
+    <string name="card_view_button_submit">报账</string>
+    <string name="card_view_button_modify">修改</string>
+    <string name="card_view_button_delete">删除</string>
+    <string name="button_tab_bill_delete_return">撤销</string>
+    <string name="button_tab_bill_delete_file">归档</string>
+
+    <string name="about_title">关于</string>
+    <string name="about_title_1">使用授权</string>
+    <string name="about_title_2">版权声明</string>
+    <string name="about_title_3">风险提示</string>
+    <string name="about_title_4">感谢</string>
+
+    <string name="about_text_1">非常感谢您使用报账管家软件，您可以通过手机软件随时随地轻松管理您的报账记录，并直观方便地得到统计信息。本软件为单机软件，目前尚不具备网络相关功能。您可以免费下载使用，LeoSoft不会向您收取任何费用。</string>
+    <string name="about_text_2">LeoSoft拥有本软件的著作权，与本软件相关的所有信息内容均受著作权法以及其他知识产权法律法规的保护。LeoSoft授权您任意复制和发布此软件，但未经LeoSoft许可任何个人或组织不得将本软件用于商业用途。</string>
+    <string name="about_text_3">本软件因个人兴趣爱好开发，开发水平有限且软件未经严格测试。用户在使用过程中可能因软件本身问题或他人通过非法途径进行数据操作等原因遭受经济损失，用户须明白并自行承担以上风险，LeoSoft不承担任何责任。</string>
+    <string name="about_text_4">本软件使用了GitHub上的开源控件，同时遵守GPL3.0、Apache2.0、MIT协议，对相关控件的开发者表示感谢：\nImKarl,aurelhubert,john990,lopspower,jgilfelt,Kunzisoft,yarolegovich,wasabeef,Yalantis,carlonzo,timehop,nikhilpanju,traex,alibaba,dudu90,pedant.</string>
+
+    <string name="bill_file_title">归档账单查询</string>
+
+    <string name="bill_file_deal">已报账</string>
+    <string name="bill_file_num">已归档笔数：</string>
+    <string name="bill_file_sum">已归档金额：</string>
+    <string name="bill_file_total">总金额</string>
+    <string name="bill_file_child_title">归档信息</string>
+
+    <string name="bill_file_type">账单类别</string>
+    <string name="bill_file_sum_range">金额区间</string>
+    <string name="bill_file_create_date_range">费用区间</string>
+    <string name="bill_file_deal_date_range">报账区间</string>
+    <string name="bill_file_min_sum">最小金额</string>
+    <string name="bill_file_max_sum">最大金额</string>
+    <string name="bill_file_begin_date">起始日期</string>
+    <string name="bill_file_end_date">结束日期</string>
+    <string name="bill_file_fold">全部</string>
+
+    <string name="but_done">确定</string>
+    <string name="but_cancle">取消</string>
+    <string name="title_tab_start_date">开始日期</string>
+    <string name="ttile_tab_end_date">结束日期</string>
+
+    <string name="bill_type_title">类别管理</string>
+
+    <string name="text_input_title">请输入类别名称</string>
+    <string name="text_input_message">请输入[1-30]个字符，否则输入数据将无法提交。</string>
+    <string name="text_input_error_message">输入错误，请输入[1-30]个字符。</string>
+    <string name="bill_child_type_new_hint">请输入新类别名称</string>
+    <string name="bill_child_type_title">类别</string>
+    <string name="bill_child_type_modify">修改</string>
+    <string name="bill_child_type_delete">删除</string>
+
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/fragment_container_3"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll_tab_3_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_title_height"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comm_half_margin"
+                android:textSize="@dimen/comm_textSize_large"
+                android:textColor="@color/colorIcons"
+                android:layout_weight="1"
+                android:text="@string/app_name" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_shaped_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+            <com.leosoft.eam.utils.ShapedImageView
+                android:id="@+id/imageUser"
+                android:layout_width="@dimen/photo_height"
+                android:layout_height="@dimen/photo_height"
+                android:layout_gravity="center"
+                app:shape_mode="circle"
+                app:stroke_color="@color/colorIcons"
+                app:stroke_width="@dimen/stroke_width">
+            </com.leosoft.eam.utils.ShapedImageView>
+
+        </FrameLayout>
+
+        <LinearLayout
+                android:id="@+id/fragment_main_settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+            <Button
+                android:id="@+id/modify_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorIcons"
+                android:drawableLeft="@drawable/ic_lock"
+                android:text="@string/settings_password"
+                android:paddingLeft="@dimen/comm_margin"
+                android:drawablePadding="@dimen/comm_padding"
+                android:gravity="center_vertical|left"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/modify_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorIcons"
+                android:drawableLeft="@drawable/ic_view_list"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/comm_margin"
+                android:drawablePadding="@dimen/comm_padding"
+                android:text="@string/settings_type"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/settings_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorIcons"
+                android:drawableLeft="@drawable/ic_folder_special"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/comm_margin"
+                android:drawablePadding="@dimen/comm_padding"
+                android:text="@string/settings_file"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/exchange_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorIcons"
+                android:drawableLeft="@drawable/ic_file_exchange"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/comm_margin"
+                android:drawablePadding="@dimen/comm_padding"
+                android:text="@string/exchange_file"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorIcons"
+                android:drawableLeft="@drawable/ic_import_contacts"
+                android:paddingLeft="@dimen/comm_margin"
+                android:drawablePadding="@dimen/comm_padding"
+                android:gravity="center_vertical|left"
+                android:text="@string/settings_about"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

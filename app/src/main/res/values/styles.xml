@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MainActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 此处的parent="Theme.AppCompat.Light.DarkActionBar"必须按此选择 -->
+    <!-- 否则SwitchDateTime控件的标题栏无底色 -->
+    <style name="BillAddActivityTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 此处按以下设置，是不显示ACTIVITY的ACTIONBAR -->
+        <item name="android:actionBarSize">0dp</item>
+        <item name="android:actionBarStyle">@style/actionBarStyleSwitchDateTime</item>
+    </style>
+
+    <style name="actionBarStyleSwitchDateTime" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.TranslucentNavigation" parent="AppTheme">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">#33000000</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="EditTextTintTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="popwin_data_progress_style">
+        <item name="android:windowEnterAnimation">@anim/popwin_data_progress_in</item>
+        <item name="android:windowExitAnimation">@anim/popwin_data_progress_out</item>
+    </style>
+
+
+</resources>

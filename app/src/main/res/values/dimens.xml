@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_height">150dp</dimen>
+    <dimen name="image_height">130dp</dimen>
+    <dimen name="comm_margin">16dp</dimen>
+    <dimen name="comm_padding">10dp</dimen>
+    <dimen name="comm_half_margin">8dp</dimen>
+    <dimen name="comm_min_margin">4dp</dimen>
+    <dimen name="comm_limit_margin">1dp</dimen>
+    <dimen name="comm_textSize_normal">14sp</dimen>
+    <dimen name="comm_textSize_middle">16sp</dimen>
+    <dimen name="comm_textSize_large">20sp</dimen>
+    <dimen name="comm_textSize_bigger">26sp</dimen>
+    <dimen name="comm_textSize_huge">32sp</dimen>
+    <dimen name="comm_textSize_little_normal">12sp</dimen>
+    <dimen name="comm_textSize_little">10sp</dimen>
+    <dimen name="comm_title_height">36dp</dimen>
+    <dimen name="comm_corner_radius">4dp</dimen>
+    <dimen name="comm_button_height">20dp</dimen>
+    <dimen name="comm_panel_height">50dp</dimen>
+
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="password_textSize">20sp</dimen>
+
+    <dimen name="card_view_height">350dp</dimen>
+
+    <dimen name="key_text_size">24.0sp</dimen>
+    <dimen name="drawableDimen">30.0dp</dimen>
+    <dimen name="digit_vertical_padding">40.0dp</dimen>
+    <dimen name="digit_horizontal_padding">15.0dp</dimen>
+    <dimen name="key_pad_min_height">300.0dp</dimen>
+
+    <dimen name="min_height_textheader_materiallike">65dp</dimen>
+    <dimen name="min_height_header_materiallike">100dp</dimen>
+    <dimen name="min_height_header">0dp</dimen>
+    <dimen name="max_height_header">210dp</dimen>
+    <dimen name="toolbar_height">36dp</dimen>
+
+    <dimen name="swipeWidth">60dp</dimen>
+</resources>

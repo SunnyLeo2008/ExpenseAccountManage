@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_popup"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <View
+        android:id="@+id/popup_bill_file_noview"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="#88000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorIcons">
+
+        <LinearLayout
+            android:id="@+id/ll_move_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/filter_bill_file_layout"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:id="@+id/ll_move_dispear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/bill_file_type"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_bill_filter_fold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_down"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/comm_limit_margin"
+                        android:layout_toStartOf="@id/ib_bill_filter_fold"
+                        android:text="@string/bill_file_fold"/>
+
+                </RelativeLayout>
+
+                <GridView
+                    android:id="@+id/gv_bill_file_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:horizontalSpacing="14dp"
+                    android:numColumns="3"
+                    android:textSize="@dimen/comm_textSize_little_normal"
+                    android:verticalSpacing="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/bill_file_sum_range"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_bill_file_min_sum_input"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shape"
+                        android:gravity="center"
+                        android:hint="@string/bill_file_min_sum"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="14"
+                        android:maxLines="1"
+                        android:paddingEnd="@dimen/comm_min_margin"
+                        android:textSize="@dimen/comm_textSize_little_normal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" － "/>
+
+                    <EditText
+                        android:id="@+id/et_bill_file_max_sum_input"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shape"
+                        android:gravity="center"
+                        android:hint="@string/bill_file_max_sum"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="14"
+                        android:maxLines="1"
+                        android:paddingEnd="@dimen/comm_min_margin"
+                        android:textSize="@dimen/comm_textSize_little_normal"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_move_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/bill_file_create_date_range"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_bill_file_begin_create_date_input"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shape"
+                        android:gravity="center"
+                        android:hint="@string/bill_file_begin_date"
+                        android:textSize="@dimen/comm_textSize_little_normal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" － "/>
+
+                    <TextView
+                        android:id="@+id/tv_bill_file_end_create_date_input"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shape"
+                        android:gravity="center"
+                        android:hint="@string/bill_file_end_date"
+                        android:textSize="@dimen/comm_textSize_little_normal"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/bill_file_deal_date_range"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_bill_file_begin_deal_date_input"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shape"
+                        android:gravity="center"
+                        android:hint="@string/bill_file_begin_date"
+                        android:textSize="@dimen/comm_textSize_little_normal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" － "/>
+
+                    <TextView
+                        android:id="@+id/tv_bill_file_end_deal_date_input"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shape"
+                        android:gravity="center"
+                        android:hint="@string/bill_file_end_date"
+                        android:textSize="@dimen/comm_textSize_little_normal"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/card_view_bill_memo_title"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_bill_file_memo_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/comm_panel_height"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_shape"
+                        android:gravity="start"
+                        android:hint="@string/card_view_bill_memo_title"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLength="40"
+                        android:padding="@dimen/comm_min_margin"
+                        android:textSize="@dimen/comm_textSize_little_normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filter_bill_file_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBackground"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cccccc"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/filter_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/text_reset"/>
+
+                <TextView
+                    android:id="@+id/filter_sure"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="@string/text_ok"
+                    android:textColor="@color/colorIcons"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

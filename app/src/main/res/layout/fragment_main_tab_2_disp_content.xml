@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/comm_min_margin"
+        card_view:cardCornerRadius="@dimen/comm_corner_radius"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/ll_card_view_title_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_panel_height"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="@dimen/comm_half_margin">
+
+                <ImageView
+                    android:id="@+id/card_view_photo_2"
+                    android:layout_width="@dimen/digit_vertical_padding"
+                    android:layout_height="@dimen/digit_vertical_padding"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/comm_half_margin"/>
+
+                <TextView
+                    android:id="@+id/card_view_bill_type_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/comm_half_margin"
+                    android:layout_toRightOf="@id/card_view_photo_2"
+                    android:textColor="@color/colorIcons"
+                    android:textSize="@dimen/comm_textSize_large"/>
+
+                <TextView
+                    android:id="@+id/card_view_bill_child_type_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/card_view_bill_type_2"
+                    android:layout_marginLeft="@dimen/comm_half_margin"
+                    android:layout_toRightOf="@id/card_view_bill_type_2"
+                    android:textColor="@color/colorIcons"
+                    android:textSize="@dimen/comm_textSize_normal"/>
+
+                <ImageView
+                    android:id="@+id/card_view_photo_right_2"
+                    android:layout_width="@dimen/comm_panel_height"
+                    android:layout_height="@dimen/comm_panel_height"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/card_view_bill_sum_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comm_margin"
+                android:layout_below="@id/ll_card_view_title_2"
+                android:layout_marginTop="@dimen/comm_half_margin"
+                android:text="@string/card_view_bill_sum_title"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/comm_textSize_normal"/>
+
+            <TextView
+                android:id="@+id/card_view_bill_sum_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/card_view_bill_sum_title_2"
+                android:layout_below="@id/card_view_bill_sum_title_2"
+                android:layout_marginTop="@dimen/comm_half_margin"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/comm_textSize_large"/>
+
+            <TextView
+                android:id="@+id/card_view_bill_date_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_view_bill_sum_2"
+                android:layout_alignLeft="@id/card_view_bill_sum_2"
+                android:layout_marginTop="@dimen/comm_half_margin"
+                android:text="@string/card_view_bill_date_title"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/comm_textSize_normal"/>
+
+            <TextView
+                android:id="@+id/card_view_bill_date_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_view_bill_date_title_2"
+                android:layout_alignLeft="@id/card_view_bill_date_title_2"
+                android:layout_marginTop="@dimen/comm_half_margin"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/comm_textSize_normal"/>
+
+            <TextView
+                android:id="@+id/card_view_bill_create_date_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/card_view_bill_date_2"
+                android:layout_alignTop="@id/card_view_bill_date_2"
+                android:layout_marginLeft="@dimen/comm_margin"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/comm_textSize_normal"/>
+
+            <TextView
+                android:id="@+id/card_view_bill_create_date_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/card_view_bill_create_date_2"
+                android:layout_alignLeft="@id/card_view_bill_create_date_2"
+                android:layout_alignTop="@id/card_view_bill_date_title_2"
+                android:text="@string/card_view_bill_create_date_title"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/comm_textSize_normal"/>
+
+            <TextView
+                android:id="@+id/card_view_bill_deal_date_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/card_view_bill_create_date_2"
+                android:layout_alignTop="@id/card_view_bill_create_date_2"
+                android:layout_marginLeft="@dimen/comm_margin"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/comm_textSize_normal"/>
+
+            <TextView
+                android:id="@+id/card_view_bill_deal_date_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/card_view_bill_deal_date_2"
+                android:layout_alignLeft="@id/card_view_bill_deal_date_2"
+                android:layout_alignTop="@id/card_view_bill_date_title_2"
+                android:text="@string/card_view_bill_deal_date_title"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/comm_textSize_normal"/>
+
+            <TextView
+                android:id="@+id/card_view_bill_memo_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/card_view_bill_date_2"
+                android:layout_below="@id/card_view_bill_date_2"
+                android:layout_marginTop="@dimen/comm_half_margin"
+                android:text="@string/card_view_bill_memo_title"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/comm_textSize_normal"/>
+
+            <TextView
+                android:id="@+id/card_view_bill_memo_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/card_view_bill_memo_title_2"
+                android:layout_below="@id/card_view_bill_memo_title_2"
+                android:layout_marginTop="@dimen/comm_half_margin"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/comm_textSize_normal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_button_height"
+                android:layout_marginTop="@dimen/comm_half_margin"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="@dimen/comm_half_margin"
+                android:layout_below="@id/card_view_bill_memo_2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_tab_bill_delete_return"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorTranslucent"
+                    android:text="@string/button_tab_bill_delete_return"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/comm_textSize_normal"/>
+
+                <Button
+                    android:id="@+id/button_tab_bill_delete_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorTranslucent"
+                    android:text="@string/button_tab_bill_delete_file"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/comm_textSize_normal"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

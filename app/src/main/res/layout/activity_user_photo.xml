@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_title_height"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonUserPhotoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/comm_half_margin"
+            android:background="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_arrow_back"/>
+
+        <TextView
+            android:id="@+id/user_photo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/user_photo_title"
+            android:textColor="@color/colorIcons"
+            android:textSize="@dimen/comm_textSize_large"/>
+
+        <Button
+            android:id="@+id/user_photo_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/comm_half_margin"
+            android:background="@color/colorTranslucent"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:text="@string/save"
+            android:textColor="@color/colorIcons"
+            android:textSize="@dimen/comm_textSize_large"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <com.leosoft.eam.utils.ShapedImageView
+            android:id="@+id/imageCropView"
+            android:layout_width="@dimen/photo_height"
+            android:layout_height="@dimen/photo_height"
+            android:layout_margin="@dimen/comm_margin"
+            app:shape_mode="circle"
+            app:stroke_color="@color/colorIcons"
+            app:stroke_width="@dimen/stroke_width">
+        </com.leosoft.eam.utils.ShapedImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/startCameraBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/user_photo_camera"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBackground"/>
+
+        <Button
+            android:id="@+id/startGalleryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/user_photo_gallery"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBackground"/>
+
+        <Button
+            android:id="@+id/goDefaultBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/user_photo_default"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBackground"/>
+
+    </LinearLayout>
+
+</LinearLayout>

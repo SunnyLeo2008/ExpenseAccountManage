@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.leosoft.eam.billtype.BillTypeActivity">
+
+    <FrameLayout
+        android:id="@+id/bill_type_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_title_height"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_bill_type_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="@dimen/comm_half_margin"
+            android:background="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_arrow_back"/>
+
+        <TextView
+            android:id="@+id/bill_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/bill_type_title"
+            android:textColor="@color/colorIcons"
+            android:textSize="@dimen/comm_textSize_large"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_height"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/bill_type_header"
+        android:scaleType="fitXY">
+    </ImageView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_bill_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:background="@color/colorWhiteSmoke"/>
+
+</LinearLayout>

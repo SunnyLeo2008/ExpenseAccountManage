@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShapedImageView">
+        <attr name="shape_mode" format="enum">
+            <enum name="round_rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+        <attr name="round_radius" format="dimension" />
+
+        <attr name="stroke_width" format="dimension" />
+        <attr name="stroke_color" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PassCodeView">
+        <attr name="digits" format="integer"/>
+        <attr name="filled_drawable" format="reference"/>
+        <attr name="empty_drawable" format="reference"/>
+        <attr name="digit_size" format="dimension"/>
+        <attr name="key_text_size" format="dimension"/>
+        <attr name="divider_visible" format="boolean"/>
+        <attr name="digit_spacing" format="dimension"/>
+        <attr name="digit_vertical_padding" format="dimension"/>
+    </declare-styleable>
+</resources>

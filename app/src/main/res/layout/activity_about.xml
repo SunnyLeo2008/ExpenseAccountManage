@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about"
+    tools:context="com.leosoft.eam.about.AboutActivity">
+
+    <FrameLayout
+        android:id="@+id/about_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_title_height"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonAboutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_half_margin"
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="left|center_vertical"
+            app:srcCompat="@drawable/ic_arrow_back"/>
+
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/about_title"
+            android:textColor="@color/colorIcons"
+            android:textSize="@dimen/comm_textSize_large"/>
+
+    </FrameLayout>
+
+    <com.leosoft.eam.utils.ShapedImageView
+        android:id="@+id/app_ico"
+        android:layout_width="@dimen/image_height"
+        android:layout_height="@dimen/image_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/digit_vertical_padding"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@id/about_bar"
+        android:scaleType="fitXY"
+        app:shape_mode="round_rect"
+        app:round_radius="35dp"
+        app:stroke_color="@color/colorIcons"
+        app:stroke_width="@dimen/stroke_width">
+    </com.leosoft.eam.utils.ShapedImageView>
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/app_ico"
+        android:layout_marginTop="@dimen/comm_half_margin"
+        android:text="@string/app_name"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/comm_textSize_bigger"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/app_title"
+        android:layout_marginTop="@dimen/comm_min_margin"
+        android:textColor="@color/colorSecondaryText"
+        android:text="@string/app_versionName"
+        android:textSize="@dimen/comm_textSize_normal"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_view_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/comm_half_margin"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="30dp"
+        android:paddingEnd="@dimen/comm_panel_height"
+        android:paddingLeft="@dimen/comm_panel_height"
+        android:paddingRight="@dimen/comm_panel_height"
+        android:paddingStart="@dimen/comm_panel_height" />
+
+</RelativeLayout>

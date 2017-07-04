@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.leosoft.eam"
+          android:versionCode="@string/app_versionCode"
+          android:versionName="@string/app_versionName">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".splash.SplashActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/MainActivityTheme">
+        </activity>
+        <activity
+            android:name=".billadd.BillAddActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/BillAddActivityTheme">
+        </activity>
+        <activity
+            android:name=".userphoto.UserPhotoActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/BillAddActivityTheme">
+        </activity>
+        <activity
+            android:name=".userphoto.TempActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".modifypassword.ModifyPassActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/BillAddActivityTheme">
+        </activity>
+        <activity
+            android:name=".about.AboutActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/BillAddActivityTheme">
+        </activity>
+        <activity
+            android:name=".billfile.BillFileActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/MainActivityTheme">
+        </activity>
+        <activity
+            android:name=".billtype.BillTypeActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/MainActivityTheme">
+        </activity>
+        <activity
+            android:name=".billtype.BillChildTypeActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/MainActivityTheme">
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.leosoft.eam.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider"/>
+        </provider>
+    </application>
+
+</manifest>
