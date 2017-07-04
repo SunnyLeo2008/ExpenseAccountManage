@@ -1,3 +1,4 @@
+[![GitHub release]](https://www.apache.org/licenses/LICENSE-2.0.html)
 # ExpenseAccountManage
 APP for recording the billing information
 # ScreenShot
