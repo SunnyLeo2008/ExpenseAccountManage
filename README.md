@@ -1,5 +1,7 @@
+[![Release](https://img.shields.io/badge/release-v1.0.0-orange.svg)](https://github.com/SunnyLeo2008/ExpenseAccountManage)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://choosealicense.com/licenses/apache-2.0/)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://choosealicense.com/licenses/mit)
+[![License](https://img.shields.io/badge/license-GNU%20GPLv3-green.svg)](https://choosealicense.com/licenses/gpl-3.0/)
 
 # ExpenseAccountManage
 APP for recording the billing information
