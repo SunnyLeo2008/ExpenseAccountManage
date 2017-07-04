@@ -34,6 +34,7 @@ public class AboutActivity extends AppCompatActivity {
         mCardAdapter.addCardItem(new CardItem(R.string.about_title_2, R.string.about_text_2));
         mCardAdapter.addCardItem(new CardItem(R.string.about_title_3, R.string.about_text_3));
         mCardAdapter.addCardItem(new CardItem(R.string.about_title_4, R.string.about_text_4));
+        mCardAdapter.addCardItem(new CardItem(R.string.about_title_5, R.string.about_text_5));
 
         mCardShadowTransformer = new ShadowTransformer(mViewPager, mCardAdapter);
         mCardShadowTransformer.enableScaling(true);

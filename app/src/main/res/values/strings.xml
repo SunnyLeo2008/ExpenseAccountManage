@@ -51,11 +51,13 @@
     <string name="about_title_2">版权声明</string>
     <string name="about_title_3">风险提示</string>
     <string name="about_title_4">感谢</string>
+    <string name="about_title_5">联系方式</string>
 
     <string name="about_text_1">非常感谢您使用报账管家软件，您可以通过手机软件随时随地轻松管理您的报账记录，并直观方便地得到统计信息。本软件为单机软件，目前尚不具备网络相关功能。您可以免费下载使用，LeoSoft不会向您收取任何费用。</string>
     <string name="about_text_2">LeoSoft拥有本软件的著作权，与本软件相关的所有信息内容均受著作权法以及其他知识产权法律法规的保护。LeoSoft授权您任意复制和发布此软件，但未经LeoSoft许可任何个人或组织不得将本软件用于商业用途。</string>
     <string name="about_text_3">本软件因个人兴趣爱好开发，开发水平有限且软件未经严格测试。用户在使用过程中可能因软件本身问题或他人通过非法途径进行数据操作等原因遭受经济损失，用户须明白并自行承担以上风险，LeoSoft不承担任何责任。</string>
     <string name="about_text_4">本软件使用了GitHub上的开源控件，同时遵守GPL3.0、Apache2.0、MIT协议，对相关控件的开发者表示感谢：\nImKarl,aurelhubert,john990,lopspower,jgilfelt,Kunzisoft,yarolegovich,wasabeef,Yalantis,carlonzo,timehop,nikhilpanju,traex,alibaba,dudu90,pedant.</string>
+    <string name="about_text_5">如果您对本软件有任何建议或问题，请发送至以下邮箱：216621@qq.com\n\n软件源码已托管至GitHub，地址如下：\nhttps://github.com/SunnyLeo2008/ExpenseAccountManage</string>
 
     <string name="bill_file_title">归档账单查询</string>
 
