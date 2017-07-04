@@ -5,7 +5,7 @@
 
 # ExpenseAccountManage
 APP for recording the billing information
-# ScreenShot
+# ScreenShots
 ![image](https://github.com/SunnyLeo2008/ExpenseAccountManage/raw/master/screenshot/mainscreens.png)
 # License
 ExpenseAccountManage is released under the Apache License 2.0、General Public License v3.0 and MIT License.
